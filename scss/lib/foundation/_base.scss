@@ -1,0 +1,30 @@
+@use "../global" as g;
+/*----------------------
+  ベースのスタイル
+-----------------------*/
+
+//remのみを使う場合
+// html {
+//   font-size: 62.5%;
+// }
+
+//remとvwを使う場合
+
+html {
+  font-size: calc(10 / 1100 * 100vw); //1100pxの所はコンテンツ幅数値に変える
+  @include g.max {
+    font-size: 62.5%;
+  }
+  @include g.sp {
+    font-size: 62.5%;
+  }
+  @include g.mini {
+    font-size: 58%;
+  }
+}
+
+
+body {
+  color:#333;
+  font-size: 1.4rem;
+}

@@ -1,0 +1,17 @@
+@use "../setting" as b;
+
+@mixin max {
+  @media (min-width: (b.$max)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: (b.$sp)) {
+    @content;
+  }
+}
+@mixin mini {
+  @media (max-width: (b.$mini)) {
+    @content;
+  }
+}
