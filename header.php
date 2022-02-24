@@ -23,7 +23,7 @@
   <meta name="twitter:image" content="">
 
   <!-- css読み込み -->
-  <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/scss/index.css">
+  <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/index.css">
 
   <title><?php bloginfo('name'); ?></title>
   <?php wp_head(); ?>
